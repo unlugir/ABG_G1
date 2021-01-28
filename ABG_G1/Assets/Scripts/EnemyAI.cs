@@ -48,7 +48,7 @@ public class EnemyAI : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(feetPoint.position, -transform.up, out hit))
         {
-            if (Vector3.Distance(hit.point, feetPoint.position) < 0.15f 
+            if (Vector3.Distance(hit.point, feetPoint.position) < 0.1f 
                 && hit.transform.tag == GameTags.Floor.ToString())
             {
                 return true;
