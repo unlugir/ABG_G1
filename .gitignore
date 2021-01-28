@@ -7,11 +7,14 @@
 /[Tt]emp/
 */Temp/
 /[Oo]bj/
-/obj/
-/Obj/
+*/obj/
+*/Obj/
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
+/logs/
+*/logs/
+*/Logs/
 /[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
