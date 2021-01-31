@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class CombinationDatabase : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] List<Combination> combinations; 
+    
+    public Combination FindCombination(List<InputPatterns> patterns)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return combinations.Find(comb => comb.patterns.SequenceEqual(patterns));
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InGameManager : Singleton<InGameManager>
 {
+    [SerializeField] public CombinationDatabase combinationDatabase;
     [SerializeField] public GameObject player;
     protected override void Initialize()
     {

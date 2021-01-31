@@ -28,6 +28,13 @@ public class Stats : MonoBehaviour
         }
         StartCoroutine(SmoothSlide(health, 0.2f));
     }
+    
+    public void DestroyAfter(float time)
+    {
+        Destroy(this.gameObject, time);
+    }
+
+
     private IEnumerator SmoothSlide(float value, float time)
     {
         float currentTime = 0;

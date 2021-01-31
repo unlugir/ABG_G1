@@ -56,4 +56,10 @@ public class EnemyAI : MonoBehaviour
         }
         return false;
     }
+    
+    private void OnDrawGizmos() 
+    {
+        Ray ray = new Ray (feetPoint.position, -transform.up);
+        Gizmos.DrawRay(ray);
+    }
 }
